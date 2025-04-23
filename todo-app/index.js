@@ -4,6 +4,9 @@ const todoApiHandler = require("./apiHandle/todoApiHandler");
 const handleUserapiRoute = require("./apiHandle/userApiRoute")
 const connected = require("./Db/connection");
 const app = express();
+const cookieParser = require("cookie-parser");
+app.use(cookieParser());
+
 const PORT = 4000;
 app.use(express.json());
 
