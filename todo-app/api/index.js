@@ -1,9 +1,9 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const todoApiHandler = require("./apiHandle/todoApiHandler");
-const handleUserapiRoute = require("./apiHandle/userApiRoute")
-const busTransPortRoute = require("./apiHandle/busTransPortRoute")
-const connected = require("./Db/connection");
+const todoApiHandler = require("../apiHandle/todoApiHandler");
+const handleUserapiRoute = require("../apiHandle/userApiRoute")
+const busTransPortRoute = require("../apiHandle/busTransPortRoute")
+const connected = require("../Db/connection");
 const app = express();
 const cookieParser = require("cookie-parser");
 app.use(cookieParser());
